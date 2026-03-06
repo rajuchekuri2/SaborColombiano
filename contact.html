@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Sabor Colombiano | Orlando, FL</title>
+  <meta name="description" content="Contact Sabor Colombiano. Call (407) 203-5005 or visit us at 504 N Alafaya Trail #106, Orlando, FL 32828.">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{fontFamily:{serif:["Playfair Display","Georgia","serif"],sans:["Montserrat","sans-serif"]}}}}</script>
+</head>
+<body class="font-sans antialiased bg-white text-gray-900">
+
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-24">
+        <a href="index.html"><img src="assets/logo.png" alt="Sabor Colombiano" class="h-28 w-auto"></a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="index.html" data-nav-page="index" class="text-sm font-medium tracking-wide uppercase transition-colors duration-200 text-gray-600 hover:text-amber-700" data-i18n="nav.home">Home</a>
+          <a href="menu.html" data-nav-page="menu" class="text-sm font-medium tracking-wide uppercase transition-colors duration-200 text-gray-600 hover:text-amber-700" data-i18n="nav.menu">Menu</a>
+          <a href="location.html" data-nav-page="location" class="text-sm font-medium tracking-wide uppercase transition-colors duration-200 text-gray-600 hover:text-amber-700" data-i18n="nav.location">Location</a>
+          <a href="about.html" data-nav-page="about" class="text-sm font-medium tracking-wide uppercase transition-colors duration-200 text-gray-600 hover:text-amber-700" data-i18n="nav.aboutUs">About Us</a>
+          <a href="contact.html" data-nav-page="contact" class="text-sm font-medium tracking-wide uppercase transition-colors duration-200 text-gray-600 hover:text-amber-700" data-i18n="nav.contact">Contact</a>
+          <button data-lang-toggle class="flex items-center gap-1.5 text-sm font-medium text-gray-600 hover:text-amber-700 transition-colors duration-200 border border-gray-300 rounded-full px-3 py-1.5"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span data-lang-label>ES</span></button>
+        </div>
+        <div class="flex items-center gap-3 md:hidden">
+          <button data-lang-toggle class="flex items-center gap-1 text-sm font-medium text-gray-600 border border-gray-300 rounded-full px-2.5 py-1"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span data-lang-label>ES</span></button>
+          <button id="mobile-menu-toggle" class="text-gray-600 hover:text-amber-700 transition-colors"><svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg><svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden bg-white border-t border-gray-200 hidden">
+      <div class="px-4 py-4 space-y-1">
+        <a href="index.html" data-nav-page="index" class="block py-3 px-4 text-base font-medium rounded-md text-gray-600 hover:text-amber-700 hover:bg-amber-50" data-i18n="nav.home">Home</a>
+        <a href="menu.html" data-nav-page="menu" class="block py-3 px-4 text-base font-medium rounded-md text-gray-600 hover:text-amber-700 hover:bg-amber-50" data-i18n="nav.menu">Menu</a>
+        <a href="location.html" data-nav-page="location" class="block py-3 px-4 text-base font-medium rounded-md text-gray-600 hover:text-amber-700 hover:bg-amber-50" data-i18n="nav.location">Location</a>
+        <a href="about.html" data-nav-page="about" class="block py-3 px-4 text-base font-medium rounded-md text-gray-600 hover:text-amber-700 hover:bg-amber-50" data-i18n="nav.aboutUs">About Us</a>
+        <a href="contact.html" data-nav-page="contact" class="block py-3 px-4 text-base font-medium rounded-md text-gray-600 hover:text-amber-700 hover:bg-amber-50" data-i18n="nav.contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="min-h-screen bg-white pt-24">
+    <section class="relative py-20 px-4">
+      <div class="max-w-7xl mx-auto text-center">
+        <h1 class="font-serif text-5xl sm:text-6xl font-bold text-amber-900 mb-4 animate-on-scroll" data-i18n="contact.title">Contact Us</h1>
+        <p class="text-lg text-amber-700 animate-on-scroll" data-i18n="contact.subtitle">We'd love to hear from you</p>
+      </div>
+    </section>
+
+    <section class="px-4 pb-20">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div class="rounded-2xl overflow-hidden border border-amber-200 shadow-lg animate-on-scroll">
+            <iframe src="https://www.google.com/maps?q=Sabor+Colombiano+Alafaya,+504+N+Alafaya+Trail+%23106,+Orlando,+FL+32828&output=embed" width="100%" height="100%" style="border:0;min-height:400px" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Sabor Colombiano Location" class="w-full h-full"></iframe>
+          </div>
+
+          <div class="space-y-6 animate-on-scroll">
+            <div class="bg-white rounded-2xl p-8 border border-amber-200 shadow-md">
+              <div class="flex items-center gap-3 mb-5">
+                <div class="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center">
+                  <svg class="w-6 h-6 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                </div>
+                <h3 class="text-amber-900 font-serif font-bold text-xl" data-i18n="contact.address">Address</h3>
+              </div>
+              <p class="text-amber-800 text-lg">504 N Alafaya Trail #106<br>Orlando, FL 32828</p>
+              <a href="https://maps.app.goo.gl/5AQHo3y4jodUhrNm9?g_st=iw" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 text-amber-700 hover:text-amber-900 font-medium text-sm underline underline-offset-4 transition-colors">
+                <span data-i18n="contact.visitUs">Visit Us</span> →
+              </a>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 border border-amber-200 shadow-md">
+              <div class="flex items-center gap-3 mb-5">
+                <div class="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center">
+                  <svg class="w-6 h-6 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                </div>
+                <h3 class="text-amber-900 font-serif font-bold text-xl" data-i18n="contact.phone">Phone</h3>
+              </div>
+              <a href="tel:4072035005" class="text-amber-800 text-2xl font-semibold hover:text-amber-600 transition-colors">(407) 203-5005</a>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 border border-amber-200 shadow-md">
+              <div class="flex items-center gap-3 mb-5">
+                <div class="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center">
+                  <svg class="w-6 h-6 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                </div>
+                <h3 class="text-amber-900 font-serif font-bold text-xl" data-i18n="contact.hours">Hours</h3>
+              </div>
+              <div class="space-y-2 text-sm">
+                <div class="flex justify-between text-amber-800" data-day="monday"><span data-i18n="location.monday">Monday</span><span>11AM - 7PM</span></div>
+                <div class="flex justify-between text-amber-800" data-day="tuesday"><span data-i18n="location.tuesday">Tuesday</span><span>11AM - 8PM</span></div>
+                <div class="flex justify-between text-amber-800" data-day="wednesday"><span data-i18n="location.wednesday">Wednesday</span><span>11AM - 8PM</span></div>
+                <div class="flex justify-between text-amber-800" data-day="thursday"><span data-i18n="location.thursday">Thursday</span><span>11AM - 8PM</span></div>
+                <div class="flex justify-between text-amber-800" data-day="friday"><span data-i18n="location.friday">Friday</span><span>11AM - 10PM</span></div>
+                <div class="flex justify-between text-amber-800" data-day="saturday"><span data-i18n="location.saturday">Saturday</span><span>9AM - 10PM</span></div>
+                <div class="flex justify-between text-amber-800" data-day="sunday"><span data-i18n="location.sunday">Sunday</span><span>9AM - 8PM</span></div>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 border border-amber-200 shadow-md">
+              <div class="flex items-center gap-3 mb-5">
+                <h3 class="text-amber-900 font-serif font-bold text-xl" data-i18n="contact.followUs">Follow Us</h3>
+              </div>
+              <div class="flex items-center gap-4">
+                <a href="https://www.instagram.com/saborcolombianoalafaya/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 bg-amber-100 hover:bg-amber-200 border border-amber-200 hover:border-amber-300 rounded-full px-5 py-3 text-amber-900 transition-all duration-300">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                  <span class="text-sm font-medium">Instagram</span>
+                </a>
+                <a href="https://www.tiktok.com/@saborcolombianoalafaya" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 bg-amber-100 hover:bg-amber-200 border border-amber-200 hover:border-amber-300 rounded-full px-5 py-3 text-amber-900 transition-all duration-300">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.75a8.18 8.18 0 004.76 1.52V6.84a4.84 4.84 0 01-1-.15z"/></svg>
+                  <span class="text-sm font-medium">TikTok</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-amber-950 text-amber-200">
+    <div class="colombia-gradient-horizontal h-1.5"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="md:col-span-1"><img src="assets/logo.png" alt="Sabor Colombiano" class="h-20 w-auto mb-4"><p class="text-sm text-amber-400/70">Sabor Colombiano</p></div>
+        <div><h3 class="text-yellow-400 font-semibold text-sm uppercase tracking-wider mb-4" data-i18n="footer.location">Location</h3><div class="flex items-start gap-2 text-sm"><svg class="w-4 h-4 mt-0.5 text-yellow-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg><p>504 N Alafaya Trail #106,<br>Orlando, FL 32828</p></div></div>
+        <div><h3 class="text-yellow-400 font-semibold text-sm uppercase tracking-wider mb-4" data-i18n="footer.contact">Contact</h3><div class="flex items-center gap-2 text-sm"><svg class="w-4 h-4 text-yellow-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg><a href="tel:4072035005" class="hover:text-yellow-400 transition-colors">(407) 203-5005</a></div></div>
+        <div><h3 class="text-yellow-400 font-semibold text-sm uppercase tracking-wider mb-4" data-i18n="footer.followUs">Follow Us</h3><div class="flex items-center gap-4"><a href="https://www.instagram.com/saborcolombianoalafaya/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-amber-900 flex items-center justify-center hover:bg-yellow-400/20 transition-colors"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a><a href="https://www.tiktok.com/@saborcolombianoalafaya" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-amber-900 flex items-center justify-center hover:bg-yellow-400/20 transition-colors"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.75a8.18 8.18 0 004.76 1.52V6.84a4.84 4.84 0 01-1-.15z"/></svg></a></div></div>
+      </div>
+      <div class="border-t border-amber-800 mt-10 pt-6 text-center"><p class="text-sm text-amber-400/60">&copy; 2026 Sabor Colombiano. <span data-i18n="footer.rights">All rights reserved.</span></p></div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

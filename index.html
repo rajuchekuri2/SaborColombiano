@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabor Colombiano - Authentic Colombian Cuisine | Orlando, FL</title>
+  <meta name="description" content="Experience authentic Colombian cuisine at Sabor Colombiano in Orlando, FL. Bandeja Paisa, Empanadas, Arepas and more.">
+  <meta property="og:title" content="Sabor Colombiano - Authentic Colombian Cuisine">
+  <meta property="og:description" content="Experience the true flavor and heart of Colombia in Orlando, FL.">
+  <meta property="og:image" content="assets/hero.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ["Playfair Display", "Georgia", "serif"],
+            sans: ["Montserrat", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans antialiased bg-white text-gray-900">
+
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-24">
+        <a href="index.html">
+          <img src="assets/logo.png" alt="Sabor Colombiano" class="h-28 w-auto">
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="index.html" data-nav-page="index" class="text-sm font-medium tracking-wide uppercase transition-colors duration-200 text-gray-600 hover:text-amber-700" data-i18n="nav.home">Home</a>
+          <a href="menu.html" data-nav-page="menu" class="text-sm font-medium tracking-wide uppercase transition-colors duration-200 text-gray-600 hover:text-amber-700" data-i18n="nav.menu">Menu</a>
+          <a href="location.html" data-nav-page="location" class="text-sm font-medium tracking-wide uppercase transition-colors duration-200 text-gray-600 hover:text-amber-700" data-i18n="nav.location">Location</a>
+          <a href="about.html" data-nav-page="about" class="text-sm font-medium tracking-wide uppercase transition-colors duration-200 text-gray-600 hover:text-amber-700" data-i18n="nav.aboutUs">About Us</a>
+          <a href="contact.html" data-nav-page="contact" class="text-sm font-medium tracking-wide uppercase transition-colors duration-200 text-gray-600 hover:text-amber-700" data-i18n="nav.contact">Contact</a>
+          <button data-lang-toggle class="flex items-center gap-1.5 text-sm font-medium text-gray-600 hover:text-amber-700 transition-colors duration-200 border border-gray-300 rounded-full px-3 py-1.5">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <span data-lang-label>ES</span>
+          </button>
+        </div>
+        <div class="flex items-center gap-3 md:hidden">
+          <button data-lang-toggle class="flex items-center gap-1 text-sm font-medium text-gray-600 border border-gray-300 rounded-full px-2.5 py-1">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <span data-lang-label>ES</span>
+          </button>
+          <button id="mobile-menu-toggle" class="text-gray-600 hover:text-amber-700 transition-colors">
+            <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden bg-white border-t border-gray-200 hidden">
+      <div class="px-4 py-4 space-y-1">
+        <a href="index.html" data-nav-page="index" class="block py-3 px-4 text-base font-medium rounded-md text-gray-600 hover:text-amber-700 hover:bg-amber-50" data-i18n="nav.home">Home</a>
+        <a href="menu.html" data-nav-page="menu" class="block py-3 px-4 text-base font-medium rounded-md text-gray-600 hover:text-amber-700 hover:bg-amber-50" data-i18n="nav.menu">Menu</a>
+        <a href="location.html" data-nav-page="location" class="block py-3 px-4 text-base font-medium rounded-md text-gray-600 hover:text-amber-700 hover:bg-amber-50" data-i18n="nav.location">Location</a>
+        <a href="about.html" data-nav-page="about" class="block py-3 px-4 text-base font-medium rounded-md text-gray-600 hover:text-amber-700 hover:bg-amber-50" data-i18n="nav.aboutUs">About Us</a>
+        <a href="contact.html" data-nav-page="contact" class="block py-3 px-4 text-base font-medium rounded-md text-gray-600 hover:text-amber-700 hover:bg-amber-50" data-i18n="nav.contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="relative h-[85vh] flex items-center justify-center">
+      <div class="absolute inset-0">
+        <img src="assets/hero.png" alt="Sabor Colombiano Restaurant" class="w-full h-full object-cover">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+        <h1 class="font-serif font-bold text-yellow-400 mb-4 drop-shadow-lg leading-tight animate-on-scroll" style="font-size:46px" data-i18n="home.heroTitle">Authentic Colombian Cuisine</h1>
+        <p class="text-lg sm:text-xl text-white/90 mb-8 max-w-2xl mx-auto drop-shadow animate-on-scroll" data-i18n="home.heroSubtitle">Experience the true flavor and heart of Colombia</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-on-scroll">
+          <a href="#" class="inline-flex items-center gap-2 bg-yellow-400 text-amber-950 font-bold px-8 py-4 rounded-full text-lg hover:bg-yellow-300 transition-all duration-300 hover:scale-105 shadow-lg">
+            <span data-i18n="home.orderNow">Order Now</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7-7 7"/></svg>
+          </a>
+          <a href="menu.html" class="inline-flex items-center gap-2 border-2 border-white text-white font-bold px-8 py-4 rounded-full text-lg hover:bg-white/10 transition-all duration-300">
+            <span data-i18n="home.fullMenu">Full Menu</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 px-4 bg-amber-900">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-6 mb-14 animate-on-scroll">
+          <h2 class="font-serif text-4xl sm:text-5xl font-bold text-amber-50" data-i18n-html="home.exploreOurSabor">Explore our <em class="text-yellow-400">sabor</em></h2>
+          <a href="menu.html" class="inline-flex items-center gap-2 bg-yellow-400 text-amber-950 font-bold px-8 py-3.5 rounded-full text-lg hover:bg-yellow-300 transition-all duration-300 shrink-0">
+            <span data-i18n="home.fullMenu">Full Menu</span>
+          </a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="group animate-on-scroll">
+            <div class="relative rounded-xl overflow-hidden mb-4 aspect-square shadow-lg">
+              <img src="assets/item1.jpeg" alt="Picada Sabor Colombiano" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-t from-amber-950/60 to-transparent"></div>
+            </div>
+            <h3 class="text-amber-50 font-semibold text-lg mb-2" data-i18n="home.dish1Title">Picada Sabor Colombiano</h3>
+            <p class="text-amber-200/70 text-sm leading-relaxed" data-i18n="home.dish1Desc">A spectacular feast of grilled meats, chorizo, shrimp, chicken, and pork with rice, beans, potatoes, and yuca fries.</p>
+          </div>
+          <div class="group animate-on-scroll">
+            <div class="relative rounded-xl overflow-hidden mb-4 aspect-square shadow-lg">
+              <img src="assets/item2.jpeg" alt="Sancocho de Costilla" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-t from-amber-950/60 to-transparent"></div>
+            </div>
+            <h3 class="text-amber-50 font-semibold text-lg mb-2" data-i18n="home.dish2Title">Sancocho de Costilla</h3>
+            <p class="text-amber-200/70 text-sm leading-relaxed" data-i18n="home.dish2Desc">Traditional Colombian soup with ribs, corn, and vegetables served with white rice, arepa, and mixed salad.</p>
+          </div>
+          <div class="group animate-on-scroll">
+            <div class="relative rounded-xl overflow-hidden mb-4 aspect-square shadow-lg">
+              <img src="assets/item3.jpeg" alt="Patacones Rellenos" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-t from-amber-950/60 to-transparent"></div>
+            </div>
+            <h3 class="text-amber-50 font-semibold text-lg mb-2" data-i18n="home.dish3Title">Patacones Rellenos</h3>
+            <p class="text-amber-200/70 text-sm leading-relaxed" data-i18n="home.dish3Desc">Crispy plantain cups filled with shredded beef, topped with fresh guacamole and parmesan cheese.</p>
+          </div>
+          <div class="group animate-on-scroll">
+            <div class="relative rounded-xl overflow-hidden mb-4 aspect-square shadow-lg">
+              <img src="assets/item4.jpeg" alt="Hamburguesa Montañera" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-t from-amber-950/60 to-transparent"></div>
+            </div>
+            <h3 class="text-amber-50 font-semibold text-lg mb-2" data-i18n="home.dish4Title">Hamburguesa Montañera</h3>
+            <p class="text-amber-200/70 text-sm leading-relaxed" data-i18n="home.dish4Desc">Mountain-style burger with all the toppings, served with golden french fries and Colombian flag.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 px-4 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="font-serif text-4xl sm:text-5xl font-bold text-amber-900 text-center mb-12 animate-on-scroll" data-i18n="home.followUs">Follow us on social</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 animate-on-scroll">
+          <div class="relative rounded-xl overflow-hidden aspect-square shadow-lg">
+            <img src="assets/item2.jpeg" alt="Restaurant ambiance" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="relative rounded-xl overflow-hidden aspect-square shadow-lg">
+            <img src="assets/neon.jpeg" alt="It's Colombia Not Columbia" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="relative rounded-xl overflow-hidden aspect-square shadow-lg">
+            <img src="assets/item1.jpeg" alt="Food" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+        </div>
+        <div class="flex justify-center gap-6">
+          <a href="https://www.instagram.com/saborcolombianoalafaya/" target="_blank" rel="noopener noreferrer" class="w-14 h-14 rounded-full bg-amber-900 flex items-center justify-center text-amber-50 hover:bg-amber-800 transition-all duration-300 shadow-md">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@saborcolombianoalafaya" target="_blank" rel="noopener noreferrer" class="w-14 h-14 rounded-full bg-amber-900 flex items-center justify-center text-amber-50 hover:bg-amber-800 transition-all duration-300 shadow-md">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.75a8.18 8.18 0 004.76 1.52V6.84a4.84 4.84 0 01-1-.15z"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-amber-950 text-amber-200">
+    <div class="colombia-gradient-horizontal h-1.5"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="md:col-span-1">
+          <img src="assets/logo.png" alt="Sabor Colombiano" class="h-20 w-auto mb-4">
+          <p class="text-sm text-amber-400/70">Sabor Colombiano</p>
+        </div>
+        <div>
+          <h3 class="text-yellow-400 font-semibold text-sm uppercase tracking-wider mb-4" data-i18n="footer.location">Location</h3>
+          <div class="flex items-start gap-2 text-sm">
+            <svg class="w-4 h-4 mt-0.5 text-yellow-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <p>504 N Alafaya Trail #106,<br>Orlando, FL 32828</p>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-yellow-400 font-semibold text-sm uppercase tracking-wider mb-4" data-i18n="footer.contact">Contact</h3>
+          <div class="flex items-center gap-2 text-sm">
+            <svg class="w-4 h-4 text-yellow-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            <a href="tel:4072035005" class="hover:text-yellow-400 transition-colors">(407) 203-5005</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-yellow-400 font-semibold text-sm uppercase tracking-wider mb-4" data-i18n="footer.followUs">Follow Us</h3>
+          <div class="flex items-center gap-4">
+            <a href="https://www.instagram.com/saborcolombianoalafaya/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-amber-900 flex items-center justify-center hover:bg-yellow-400/20 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@saborcolombianoalafaya" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-amber-900 flex items-center justify-center hover:bg-yellow-400/20 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.75a8.18 8.18 0 004.76 1.52V6.84a4.84 4.84 0 01-1-.15z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-amber-800 mt-10 pt-6 text-center">
+        <p class="text-sm text-amber-400/60">&copy; 2026 Sabor Colombiano. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
